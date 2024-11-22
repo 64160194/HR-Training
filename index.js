@@ -13,6 +13,14 @@ app.get('/', (req, res) => {
   res.render('login');
 });
 
+app.get('/login-old', (req, res) => {
+  res.render('login_old');
+});
+
+app.get('/login-new', (req, res) => {
+  res.render('login_new');
+});
+
 const port = 3000;
 app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);
